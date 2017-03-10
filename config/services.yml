@@ -1,0 +1,7 @@
+services:
+    app.twig.screenshotlayer:
+        class:     AppBundle\Twig\ScreenshotlayerExtension
+        arguments:  ['%screenshotlayerApiKey%']
+        tags:
+            - { name: twig.extension }  
+  
