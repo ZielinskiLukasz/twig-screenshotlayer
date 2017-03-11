@@ -28,7 +28,7 @@ class ScreenshotlayerExtension extends \Twig_Extension
     {
         $thumbnailHtml = '<a href="$1" target="_blank"><img src="http://api.screenshotlayer.com/api/capture?access_key=' . $this->apiKey . '&url=$1&fullpage=' . $fullHeightCapture . '&viewport=1440x900&width=' . $width . '" /></a> ';
 
-        return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_,\.#%-]*(\?\S+)?[^\.\s])?)?)@', $thumbnailHtml, $link); 
+        return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_,\.#%-]*(\?\S+)?[^\.\s])?)?)@', $thumbnailHtml, $link);
     }
 
     public function getName() : string
