@@ -3,7 +3,7 @@
 namespace AppBundle\Twig;
 
 /**
- * Twig extension using the screenshotlayer API to display website screenshot. Requires valid API key.
+ * Twig extension using the screenshotlayer API to display website screenshot. Requires a valid API key.
  */
 class ScreenshotlayerExtension extends \Twig_Extension
 {
